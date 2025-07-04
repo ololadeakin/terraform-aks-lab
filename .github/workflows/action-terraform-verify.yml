@@ -49,4 +49,6 @@ jobs:
           done
       - name: Process check
         if: always()
-        run: exit $CHECK_STATUS
+        run: |
+          echo "Final check status: ${{ env.CHECK_STATUS }}"
+          exit ${{ env.CHECK_STATUS }}
