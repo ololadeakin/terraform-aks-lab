@@ -3,6 +3,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "cst8918-lab-rg"
-location = "East US"
+  nam    = "cst8918-lab-rg"
+  location = "East US"
 }
